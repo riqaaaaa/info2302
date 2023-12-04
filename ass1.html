@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RM1 Campaign</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scr.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div id="left_side">
+            <img src="iium_logo.png" alt="iium_logo" width="100" height="100">
+            <h1>RM1 CAMPAIGN</h1>
+        </div>
+        <div id="right_side">
+            <img src="money in jar.png" alt="money in jar" width="150" height="300">
+        </div>
+        <div id="bottom_side">
+            <p id="tagline">Let your contributions be perpetual for the pleasure of Allah SWT</p>
+            <p id="translation">“The example of those who spend their wealth in the
+                way of Allah is like a seed [of grain] which grows seven
+                spikes; in each spike is a hundred grains. And Allah
+                multiplies [His reward] for whom He wills. And Allah is
+                all-Encompassing and Knowing.”
+                Al Baqarah:261</p>
+        </div>
+    </div>
+
+    <div class="content">
+        <p id="letter_address">
+            Director<br>
+            IIUM Endowment Fund <br>
+            Level 3, Rectory Building<br>
+            International Islamic University Malaysia
+        </p>
+
+        <p id="letter_title">
+            PARTICIPATION IN RM1 CAMPAIGN - MONTHLY SALARY DEDUCTION
+        </p>
+
+        <div class="label-list">
+            <label class="label-name" for="Name">Name</label>
+            :<input class="in" type="text" id="Name" name="Name"><br>
+        </div>
+
+        <div class="label-list">
+            <label class="label-name" for="Staff no">Staff No. </label>
+            :<input class="in" type="text" id="Staff_no" name="Staff No."><br>
+        </div>
+
+        <div class="label-list">
+            <label class="label-name" for="K/C/D/I/O">K/C/D/I/O </label>
+            :<input class="in" type="text" id="KCDIO" name="K/C/D/I/O"><br>
+        </div>
+
+        <div class="label-list">
+            <label class="label-name" for="Contact no">Contact No. </label>
+            :<input class="in" type="text" id="Contact_no" name="Contact No."><br>
+        </div>
+
+        <div class="label-list">
+            <label class="label-name" for="Email">Email </label>
+            :<input class="in" type="email" name="Email" id="Email"><br>
+        </div>
+
+        <div class="label-list">
+            <label class="label-name" for="Amount">Amount to be Deducted </label>
+            RM<input class="in" type="number" id="amount" name="amount"><br>
+        </div>
+
+        <p>
+            The above salary deduction will take effect from <input class="date" type="month" name="month" id="month">
+            until <input class="date" type="month" name="month" id="month2"> or further notice.
+        </p>
+
+        <div class="choose_based">
+            <div class="choice"><input class="radio-base" type="radio" name="based" value="general" onclick="show1()" checked> General</div>
+            <div class="choice"><input class="radio-base" type="radio" name="based" value="kuliyyah" onclick="show2()"> Kuliyyah-based</div>
+            <div id="div1" class="hide">
+                <label class="label-name" for="kuliyyah">For Kuliyyah of </label>
+                <input type="text" id="kuliyyahC" name="kuliyyah"><br>
+            </div>
+        </div>
+        <br><br><br><br>
+        <div id="closing">
+            <p><div id="Signature">__________________<br>Signature<br>(_________________)</div></p>
+            <p><div class="date" id="dateDIV"><input type="date" name="date" id="date"><br>Date</div></p>
+        </div>
+        <br><br><br>
+
+        <div id="buttons">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="cont" id="contact_icon"><img src="contact_us.png" alt="contact" width="156" height="74.4"></div>
+            <div class="cont" id="contact_info">
+                <p id="contact_info">IIUM ENDOWMENT FUND<br>
+                Level 3, Rectory<br>
+                International Islamic University Malaysia<br>
+                P.O Box 10<br>
+                50728 Kuala Lumpur<br>
+                Tel: 03 6196 4268<br>
+                Email: ief@iium.edu.my<br>
+                Website: www.iium.edu.my/ief<br>
+                Facebook: www.facebook.com/ief.official</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
